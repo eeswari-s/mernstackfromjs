@@ -1,0 +1,140 @@
+1.Hoisting:
+      // console.log(a);//undefined
+
+// var a=10;
+
+
+
+
+// var b;
+// console.log(b);
+// b=20;
+//  console.log(b);
+
+
+//  console.log(c);//ReferenceError: Cannot access 'c' before initialization
+//  let c=30;
+
+
+ //functional hoisting
+
+
+ greet();//works
+ function greet(){
+     console.log("hello");
+ }
+
+
+ //hello();//TypeError: hello is not a function
+  var hello = function(){
+      console.log("hi");
+  };
+
+  hello();
+
+ //-----------------------------------------------------------     
+
+ scope:
+       1.global scope
+       2.function scope
+       3.block scope
+
+    1.global scope:
+
+    // var fname="nila";//global scope
+
+// function hi()
+// {
+//     console.log("hi "+fname);
+// }
+// hi();
+
+//----------------------------
+2.function scope
+// function greet()//function scope
+// {
+//     var message="welcome";
+//     console.log(message);
+// }
+
+// greet();
+
+// console.log(message);//message is not defined
+//----------------------------------------------------------
+3.block scope
+{
+    let x=10;
+    const y=20;
+    var z=30;
+
+}
+console.log(x);//x is not defined
+console.log(y);//y is not defined
+console.log(z);//30
+-------------------------------------------------------
+
+3.Object and json iteration:
+const student= {
+    name : "nila",
+    age:23,
+    course:"mernstack"
+};
+
+console.log(student);
+console.log(student.name);
+
+
+  Example:
+  const student= {
+    name : "nila",
+    age:23,
+    course:"mernstack"
+};
+//method1 for 
+for(let key in student){
+    console.log(key,student[key]);
+}
+//object.keys()
+console.log(Object.keys(student));
+
+//object.values()
+console.log(Object.values(student));
+
+//object.entries()
+console.log(Object.entries(student));
+------
+Json iteration:
+                  const jsonData='{"name":"nila","age":23,"course":"mernstack"}';
+const obj=JSON.parse(jsonData);
+console.log(obj.name);    
+
+-------------------------------------------------------------------------------------------
+4.Array:
+
+
+let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+console.log(fruits[2]);//cherry
+
+console.log(fruits.length);//5
+
+tyes:
+      1.push()
+      2.pop()
+      unshift()
+      shift()
+      indexOf()
+      includes()
+      slice()
+      splice()
+      contact()
+      reverse()
+      sort()
+----------------------------------------------------------------------------
+      mrf method
+
+      Map
+      reduce
+      filter
+----------------------------------------------------------------------------      
+  5.for:
+         

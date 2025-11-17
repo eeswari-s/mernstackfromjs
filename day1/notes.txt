@@ -1,0 +1,34 @@
+1.variables:
+           var
+           let
+           const
+
+-----------------------------------------------------------------------------
+2.operators:
+     
+
+     type:
+           arithmatic operator:  +,-,*,/,%,**
+           logical operator: &&, !
+
+-------------------------------------------------------------------------
+3.Data types:
+             string   -"text"
+             Number   -2,3,5
+             Boolean  -true or false
+             Undefined -let x;
+             null     -empty value
+-----------------------------------------------------------------------------
+4.function:
+     parameter
+-------------------------------------------------
+5.while:
+6.dowhile
+---------------------------------------------
+7.if else
+8.for loop:
+for(initialize;condition;increment/decrement)
+{
+    //code
+}
+------------------------------------------------

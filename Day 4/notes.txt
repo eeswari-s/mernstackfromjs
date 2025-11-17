@@ -1,0 +1,87 @@
+1.Object:
+
+
+const student = {
+    name:"nila",
+    age:23,
+    course:"mernstack",
+    address:
+    {
+        city:"pune",
+        state:"maharashtra"
+    }
+}
+
+console.log(student);
+
+console.log(student.name);
+console.log(student["course"]);
+
+student.grade="A";
+console.log(student);
+
+delete student.age;
+console.log(student);
+------------------------------------------------------------------
+2.this key word:
+
+const use={
+    name:"nila",
+    greet: function()
+    {
+        console.log(`hello , I am ${this.name}`  );
+    }
+  
+}
+use.greet();
+--------------------------------------------------------
+3.object methods:
+const calculator = {
+    a:10,
+    b:5,
+   add()
+   {
+    return this.a + this.b;
+   },
+   multiply(){
+    return this.a * this.b;
+   }
+};
+
+console.log(calculator.add());
+console.log(calculator.multiply());
+
+
+task:
+     object.key(),values(),entries()
+----------------------------------------------------------------------------
+4. strings in java cripts:
+
+
+let fname="shubham";
+
+
+console.log(fname);
+console.log(fname.length);
+console.log(fname[2]);
+console.log(fname[fname.length - 1]);
+
+
+//toUpperCase()
+//toLowerCase()
+//concat()
+//indexOf()
+//lastIndexOf()
+//slice()
+//substring()
+//replace()
+//split()
+----------------------------------------------------------------
+
+5. dom:
+let heading = document.getElementById("title");//<h1 id="title"></h1>
+
+heading.textContent = "Welcome to  DOM";//<h1 id="title">"Welcome to  DOM</h1>
+heading.style.color = "red";
+heading.appendchild(heading);
+---------------------------------------------------------------------------------------------------

@@ -1,0 +1,174 @@
+1. Introduction to JavaScript
+
+What is JavaScript
+
+How JS works
+
+JS vs other languages
+
+Linking JS to HTML (script tag)
+
+Input / Output (alert, prompt, console.log)  
+
+2. Variables & Data Types
+
+var, let, const
+
+Number, String, Boolean
+
+Null, Undefined
+
+BigInt, Symbol
+
+Type conversion (implicit & explicit)
+
+3. Operators
+
+Arithmetic
+
+Assignment
+
+Comparison
+
+Logical
+
+Ternary operator
+
+Increment / decrement
+
+Spread & rest operators
+
+4. Conditional Statements
+
+if
+
+else if
+
+else
+
+switch
+
+5. Loops
+
+for
+
+while
+
+do…while
+
+for…of
+
+for…in
+
+6. Functions (Very important)
+
+Function declaration
+
+Function expression
+
+Arrow functions
+
+Parameters & arguments
+
+Return keyword
+
+Default parameters
+
+🟡 INTERMEDIATE LEVEL (Core JavaScript)
+7. Arrays
+
+Create arrays
+
+Basic methods (push, pop, shift, unshift)
+
+Higher-order methods:
+
+map
+
+filter
+
+reduce
+
+find
+
+findIndex
+
+sort
+
+some
+
+every
+
+includes
+
+8. Strings
+
+String methods
+
+Template literals
+
+Escape characters
+
+Searching (indexOf, includes, startsWith)
+
+9. Objects
+
+Object creation
+
+Object methods
+
+this keyword
+
+Destructuring
+
+Object cloning
+
+Nested objects
+
+Optional chaining
+
+10. DOM Manipulation
+
+DOM tree
+
+Selecting elements
+
+Editing content (innerText, innerHTML, textContent)
+
+Editing styles
+
+Creating & removing elements
+
+Event listeners
+
+Event bubbling & capturing
+
+11. BOM (Browser Object Model)
+
+Window
+
+Navigator
+
+LocalStorage
+
+SessionStorage
+
+Cookies
+
+History
+
+12. JSON
+
+JSON structure
+
+JSON.parse
+
+JSON.stringify
+
+13. Date & Time
+
+Date object
+
+Get/set methods
+
+Formatting dates

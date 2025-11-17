@@ -1,0 +1,197 @@
+1.Nestedloop:
+      Loop inside another loop
+
+      Example:
+      // for (i=1; i<=5; i++)
+// {
+//     for (j=1; j<=10; j++)
+//     {
+//        console.log(`${i} x ${j} = ${i*j}`);
+       
+//     }
+//     console.log("------------");
+// }
+
+
+// for (let i=1; i<=5; i++)
+// {
+//     let stars="";
+//     for (let j=1; j<=i; j++)
+//     {
+//         stars=stars+"*";
+//     }
+//     console.log(stars);
+// }
+--------------------------------------------------------------------
+2.break:
+         exit the loop immediately
+
+    example:
+    for (let i=1; i<=10; i++){
+    if(i===6)break;
+        console.log(i);
+    
+}     
+continue:
+  skip the current ietration, move to next
+  Example:
+  for (let i=1; i<=10; i++){
+    if(i===6)continue;
+        console.log(i);
+    
+}
+----------------------------------------------------------------------
+3.comparison operators:
+//comparison operators
+let a=10;
+let b="10";
+// console.log(a>b);//false
+// console.log(a<b);//true
+// console.log(a>=b);//false
+// console.log(a<=b);//true
+console.log(a==b);//true
+console.log(a===b);//false
+console.log(a!=b);//false
+console.log(a!==b);//true
+--------------------------------------
+4.tenary operators
+       short form of if else
+       syntax:
+               condition ? true : false ;
+        Example:
+        let age = 20;
+ let result = (age >=18) ? "Eligible" : "Not Eligible";
+ console.log(result);
+ -------------------------------------------------------------------------------------------------------
+ 5.switch:
+ alternative to multiple if-else conditions
+
+ syntax:
+     switch(expression){
+        case 1:
+        //code
+        break;
+        case 2:
+        //code 
+        break;
+        default:
+        //code 
+     }
+
+example:
+       let day ="saturday";
+
+switch(day){
+    case "monday":
+        console.log("Today is Monday");
+        break;
+    case "tuesday":
+        console.log("Today is Tuesday");
+        break;
+    case "wednesday":
+        console.log("Today is Wednesday");
+        break;
+    case "thursday":
+        console.log("Today is Thursday");
+        break;
+    case "friday":
+        console.log("Today is Friday");
+        break;
+    case "saturday":
+        console.log("Today is Saturday");
+        break;
+    case "sunday":
+        console.log("Today is Sunday");
+        break;
+    default:
+        console.log("Invalid day");
+}
+----------------------------------------------------------------------------------------
+6.Array Methods:
+   1push():
+          it will add value end of tha array .
+          Example:
+            
+let colors = ["red","green"];
+colors.push("blue");
+console.log(colors);
+2.pop():
+it will remover end odf the array.
+Example:
+let colors = ["red","green","yellow"];
+colors.pop();
+console.log(colors);
+3.unshift():
+       array first value
+       Example:
+       
+let colors = ["red","green","yellow"];
+colors.unshift("blue");
+console.log(colors);
+4.shift:
+it will remove first array 
+example:
+let colors = ["red","green","yellow"];
+colors.shift();
+console.log(colors);
+5.indexof():
+let colors = ["red","green","yellow","blue","black"];
+console.log(colors.indexOf("yellow"));
+6.include():
+
+let colors = ["red","green","yellow","blue","black"];
+console.log(colors.indexOf("yellow"));
+console.log(colors.includes("orange"));//false
+console.log(colors.includes("yellow"));//true
+7.slice():
+//slice
+//               0        1          2           3           4
+let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+let newFruits=fruits.slice(1,4);
+console.log(newFruits);
+console.log(fruits);
+
+splice:
+
+//             0 1 2 3 4 5 6 7 8 9
+let numbers = [1,2,3,4,5,6,7,8,9,10];
+numbers.splice(1,7);
+console.log(numbers);
+
+9.concat:
+//concat
+
+
+let a = [1,2,3];
+let b = [4,5,6];
+let c = a.concat(b);//merge
+console.log(c);
+
+join():
+let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+console.log(fruits.join("- "));//apple-  banana-  cherry-  date-  elderberry
+-----------------------------------------------------------------------------------------------------------------
+7. MRF method
+
+map() :
+     map() does not modify the orginal array. 
+    
+let numbers = [1,2,3,4,5,6];
+let square =numbers.map(n=> n*n);
+console.log(square);
+-------------------------------------------------
+
+filter():
+        let nums = [10,20,30,25];
+let total = nums.filter(n=>n%2==0);
+console.log(total);
+
+----------------------------------------------
+Reduce:
+         
+let numbers =[5,10,15,20,25];
+let result=numbers.reduce((sum,val)=>sum+val, 0);
+console.log(result);
+
+
+find(),finindex,sort(),reverse(),
