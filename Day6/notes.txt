@@ -1,0 +1,218 @@
+1.function:
+            -to perform a perticular task.
+            -to avoid repetation of code 
+            -return: to get the value outside of the function
+
+    types of the function:
+     
+     1.Function declaration /Normal function
+     2.Arrow function
+     3.IIFE Function
+     4.Function Expression/anonymous
+
+------------------------------------------------------------
+1.function declaration:
+   
+   syntax:
+           function funcationName(parrameter)
+           {
+            //code 
+           }
+Example:
+         
+  function first()
+  {
+    console.log("thank you ");
+  }
+
+   first();
+   Example2:
+              
+function second(a , b)//parameter
+{
+    return a+b;
+}
+console.log(second(10, 20));
+                 //argument
+--------------------------------------------
+2.Function Expression            
+                      -Function without name, often used as argument to other function.
+                      -use case: mostly for if any events
+
+        syntax:
+                var functionName=function(parameter){//code}
+    Example:
+              const third = function()
+{
+    console.log("hello");
+}
+
+third();
+Example:
+            const multiply =function(a,b)
+ {
+    return a*b;
+ }
+ console.log(multiply(10,5));
+ -----------------------------------------
+ 3.Arrow function:
+                    -Introduced in ES6 version
+                    -To reduce code length
+    syntax:
+             var functionName =()=>{//code}
+    Example:
+                  const multiply =(a,b)=>{
+            return a * b;
+        }
+        console.log(multiply(10,5));
+----------------------------------------------------
+4.IIFE-Immediately Invoked Function Expression:
+
+                      -Immediately delete the values after using because it has limited memory space.
+    syntax:
+             (function(){
+                //code
+             })();
+Example:
+                    (function()
+        {
+            console.log("welcome");
+        })();
+------------------------------------------------------------------------------------
+,
+arithmatic
+assignment operator
+, logical operator
+comparison operators
+string operator
+ternary operatortyofoperator
+bitwise operator
+-----------------------------------
+1.arithmatic operator:
+Example:
+              let a =10;
+    let b =20;
+
+    console.log(a+b);
+    console.log(a-b);
+    console.log(a*b);
+    console.log(a/b);
+    console.log(a%b);
+    console.log(a**b);//a^b
+a++;
+console.log(a);
+b--
+console.log(b);
+------------------------------
+2.assignmanet operator
+Example:
+
+
+
+
+
+
+// //assignment operator
+
+//   let a=30;
+  
+
+//   a += 5;// a =a+5;
+//   console.log(a);
+
+//   a =+ 5;
+//   console.log(a);
+
+  //comparison operator
+console.log(5=="5");//true
+console.log(5==="5");//false
+console.log(5>2);//true
+console.log(5>=5);//true
+console.log(5<=5);//true
+
+//logical operator
+
+//&& , !
+//Task:
+//18 age
+//12  std
+
+// mark: 90 pass
+// mark; 45 pass
+ 
+//not
+//=============================
+//string operator
+
+//=
+//+
+let a = 10;
+
+console.log("bbb"+a);
+//----------------------------------
+//ternary operator
+//task:
+//synatx:
+// condtion ? valueTrue:valuefalse;
+//---------------------------------------------------
+//typeof operator
+console.log(typeof "hello");
+//-----------------------------------------------
+//bitwise operator
+
+//and
+            A         B          A and B
+            0         0            0
+            0         1            0
+            1         0            0
+            1         1            1
+
+    or
+            A         B          A or B
+            0         0            0
+            0         1            1
+            1         0            1
+            1         1            1
+
+Nor:
+            A         B          A or B
+            0         0            1
+            0         1            0
+            1         0            0
+            1         1            0
+Not 
+         a      not A
+         0        1
+         1        0
+-------------------------------------------------------
+                                                                          
+0000 ------------------------0
+   1
+------
+0001 -------------------------1
+   1
+------
+0010 -------------------------2
+   1
+-----
+0011 --------------------------3
+   1
+-----
+0100 ---------------------------4
+0001
+----
+0101 ----------------------------5
+   1
+----
+0110-----------------------------6
+
+
+0101
+0101
+-----
+1010------10
+
+0101
+0100
+-----
+0100
