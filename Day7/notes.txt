@@ -1,0 +1,43 @@
+const user = {
+    username:"john",
+    age:27,
+    course:"mernstack",
+    address:
+    {
+        city:"chennai",
+        pincode:600067
+    }
+};
+
+console.log(user);
+
+console.log(user.username);
+
+console.log(user["course"]);
+
+console.log(user.address.city);
+
+
+//array of obeject
+
+let products = [
+    {id:1 , name: "headset",price:2000},
+    {id:2, name: "mobiles",price:20000}
+];
+
+console.log(products[1].name);
+console.log(products.length);
+
+console.log("products")
+
+
+
+let person =
+{
+    name:"john",
+    greet(){
+        console.log("hello, this is "+this.name)
+    }
+};
+
+person.greet();
