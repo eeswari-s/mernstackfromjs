@@ -1,0 +1,12 @@
+Task:
+     1.write a function to find if a number is even or odd.
+     2.write a function that takes a name and prints.
+     3.write a function that returns the sum of first 20 numbers
+     4.multiplication table
+     5. age >=18-go to college
+        age<18-go to school
+        age >=22-go to work 
+        age>=60 - u take rest 
+        - u  not human , 
+closures:
+              

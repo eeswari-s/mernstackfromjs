@@ -1,0 +1,36 @@
+lexical:
+          A function is allowed to access variables from the place wherre it is written (its birth place). not from whee it is called.
+------------------------------------------------------------------------------------------------
+2.this:
+        the value of "this" depends on  how  a function called, not wherre it is written .
+        in object methods,"this" refers to the object that calls method.
+        Arrow functions do not have thei own "this:; they use "this" from their parent scope.
+Example:
+
+const user={
+    name:"john",
+    show(){
+        console.log(this.name);
+    }
+}
+
+user.show();
+-----------------------------------------------------------------------------
+call/apply/bind-can change "this"
+
+
+//call bind apply 
+
+//call
+
+function chennai(city,age){
+    console.log(`hi this is ${this.name},from ${city},age ${age}`);
+}
+
+const user2 ={name:"doe"};
+
+chennai.call(user2,"chennai",26);
+=================================================
+1.call():
+          call()-call imidiately+arguments individually
+          
