@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="textBox" class="demoClass">
+        <h2>This is heading</h2>
+        <p>This is paragraph</p>
+        <a href="#">This is link</a>
+    </div>
+      <div id="textBox" class="demoClass">
+        <h2>This is a heading</h2>
+        <p>This is a paragraph</p>
+        <a href="#">This is link</a>
+<!--value,src,-->
+       <input id="inputBox" type="text" placeholder="enetr yor name hee" required value="hi">
+       <a id="myLink" href="http://127.0.0.1:5500/Day10/index.html">document1</a>
+       <img id="myImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn2nmWoa-66Yo5xylQwIiAxtvMrK2pB2l4CA&s">
+    </div>
+
+    <!--style-->
+    <p id="text">this is color changing paragraph</p>
+    <button onclick="changeColor()">change color</button>
+    <!--classlist-->
+    <div id="classBox" class="red">classlist</div>
+<div id="box" style="width:150px; height:150px; background-color:yellow;"></div>
+<button onclick="makered()">change color</button>
+    <script>
+        //=======================================
+        //inneHTML,innerText,textContent
+        //=======================================
+        let htmlbox = document.getElementsByClassName("demoClass");
+        console.log(htmlbox[0].innerHTML);
+        console.log(htmlbox[1].innerText);
+        console.log("textcontent: ",htmlbox[0].textContent);
+        //=======================================
+        //value,src,href
+        //=======================================
+        let inputVal = document.getElementById("inputBox").value = "john doe";
+        console.log("input value: ",inputVal.value);
+
+        let link = document.getElementById("myLink");
+        let img = document.getElementById("myImg");
+        console.log("image src: ",img.src);
+        console.log("link href: ",link.href);
+        //=======================================
+        //style
+        //=======================================
+        function changeColor(){
+              let color = document.getElementById("text");
+                color.style.color = "blue";
+        }
+     
+//=======================================
+//classList
+//=======================================
+let classBox = document.getElementById("classBox");
+
+classBox.classList.add("activeClass");
+console.log("class list: ",classBox.classList);
+
+classBox.classList.remove("red");
+console.log("class list after remove: ",classBox.classList);
+
+classBox.classList.toggle("toggleClass");
+console.log("class list after toggle: ",classBox.classList);
+//id
+console.log("Id: ",classBox.id);
+
+
+//=======================================
+//color change in css
+//=======================================
+function chnagecolor(){
+    document.getElementById("text").style.color = "green";
+}
+function makered(){
+    document.getElementById("box").style.backgroundColor = "red";
+}
+    </script>
+</body>
+</html>

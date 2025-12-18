@@ -1,0 +1,33 @@
+1.DOM(Document object Model)
+      A programming that represtes HTML as a tree structure.
+      Allows java script to access and modify elemts , attributes and content.
+      every html tag becomes a node in the DOM tree.
+--------------------------------------------------------------------------------
+2.Document Tree structure
+   
+     The HTML is converted into a hierarchical tree od nodes.
+     The root is document, then html, head, body, and child elemets.
+     the traversal allows selecting and manipulating el;ements.
+---------------------------------------------------------------------------------
+3.Node  /Element/Attribute/text
+
+text:  Anything inside the DOM(element, text, comment).<h1>content</h1>
+element Node: Actual HTML tags like <div>, <p>
+Attribute node: values inside tags (id,class, src).
+text node:The text contained inside an element.
+--------------------------------------------------------------------
+4.window objects
+                 global object for browser javasript.
+                 all functions like alert, setTimeout, document exist inside window
+                 accessing window properties is optional(implicit).
+---------------------------------------------------------------------------------
+
+1.getElementById
+                 selects all elements with the given class name.
+                 returns an htmlCollections (array-like).
+                 must use index to access items.
+
+        syntax: 
+                 document.getElementById("idname");
+ ---------------------------------------------------------------------------------
+                 

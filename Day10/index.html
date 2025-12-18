@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--getElementById-->
+   <h2>--getElementById--</h2>
+   <p id="msg">This is Id based paragraph</p>
+   <p id="msg">This is Id based paragraph</p>
+   <p id="msg">This is Id based paragraph</p>
+   <p id="msg">This is Id based paragraph</p>
+   <!--getelementByClassName-->
+   <h1>--getelementByClassName--</h1>
+   <p class="item">Apple</p>
+   <p class="item">mango</p>
+   <p class="item">grapes</p>
+   <!--getelementByTagName-->
+    <h1>--getelementByTagName--</h1>
+    <h6>tag one</h6>
+    <h6>tag two</h6>
+    <h6>tag three</h6>
+    <h6>tag four</h6>
+
+    <!--querySelector-->
+    <h1>--querySelector--</h1>
+    <p class="a">first selector</p> 
+    <p class="a">second selector</p> 
+    <p class="a">third selector</p>
+    <!--querySelectorall-->
+    <h1>--querySelectorall--</h1>
+    <p class="b">1</p> 
+    <p class="b">2</p> 
+    <p class="b">3</p> 
+    <p class="b">4</p> 
+    <p class="b">5</p> 
+    <p class="b">6</p> 
+    <p class="b">7</p> 
+<script>
+    //==========================
+    //getelementById
+    //==========================
+    const paragraph = document.getElementById("msg");
+    console.log("getElementById:", paragraph.innerText);
+
+    const msg = "This is Id based paragraph";
+    console.log(msg);
+    //==========================
+    //getelementByClassName
+    //==========================
+    const para = document.getElementsByClassName("item");
+    console.log("getelementByclassname: ",para[0].innerText,"|",para[1].innerText,"|",para[2].innerText );
+    console.log(para.innerText);
+    //==========================
+    //getelementByTagName
+    //=============================
+    let student = document.getElementsByTagName("h6");
+    console.log("getelementbytagname: ",student[0].innerText,"|",student[1].innerText,"|",student[2].innerText,"|",student[3].innerText);
+    console.log(student.length);
+    console.log(student.innerText);
+    console.log(student);
+    //==========================
+    //querySelector 
+    //==========================
+    const b = document.querySelector(".a");
+    console.log("querySelector:", b.innerText);
+    //==========================
+    //querySelectorall
+    //==========================
+    const c = document.querySelectorAll(".b");
+    console.log("queryselectorall: ");
+    c.forEach((el)=>console.log(el.innerText));
+</script>
+</body>
+</html>

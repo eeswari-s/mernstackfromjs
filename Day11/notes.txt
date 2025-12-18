@@ -1,0 +1,29 @@
+Dom properties
+
+innerHTML
+innerText
+textContent
+valuessrc,href
+style
+classList(add,remove,toggle)
+id,name
+
+=================================================
+1.innerHTML
+            Returns HTML content including tags.
+            Allows inserting HTML markup.
+            Used for dynamic rendering.
+================================================
+2.innerText:
+              Returns only visible text.
+              Respects css(hidden element ignoed).
+              safer for showing text.
+=================================================
+3.textContent:
+               returns all text including hidden.
+               does not consider css.
+               faster than innerText.
+==============================================
+
+task:
+      <div>6 to 7 tags </div>//color change , text, classname add , remove
